@@ -28,7 +28,7 @@ px4_add_board(
 		differential_pressure/ms4525
 		#distance_sensor # all available distance sensor drivers
 		distance_sensor/ll40ls
-		#distance_sensor/sf0x
+		distance_sensor/sf0x
 		gps
 		#heater
 		#imu/adis16448
@@ -118,9 +118,4 @@ px4_add_board(
 		#px4_simple_app # Tutorial code from https://px4.io/dev/px4_simple_app
 		#rover_steering_control # Rover example app
 		#segway
-	)
-
-# remove optional flight task features from fmu-v2 to save flash memory
-list(APPEND flight_tasks_to_remove
-		Orbit
 	)
